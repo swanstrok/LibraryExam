@@ -9,7 +9,7 @@ router.register(r'libraries', LibraryAPIViewSet, basename='libraries')
 
 
 urlpatterns = [
-
+    path('drf-auth/', include('rest_framework.urls')),
 ]
 
 urlpatterns += router.urls

@@ -16,6 +16,7 @@ class Book(models.Model):
     class Meta:
         verbose_name = 'Книга'
         verbose_name_plural = 'Книги'
+        ordering = ['id', 'author']
 
 
 class Library(models.Model):
@@ -30,3 +31,4 @@ class Library(models.Model):
     class Meta:
         verbose_name = 'Библиотека'
         verbose_name_plural = 'Библиотеки'
+        ordering = ['id']
